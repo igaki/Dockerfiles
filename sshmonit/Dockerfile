@@ -24,7 +24,7 @@ RUN sed -i -e "s/#UsePAM no/UsePAM no/g" /etc/ssh/sshd_config
 RUN sed -i -e "s/#MaxStartups 10:30:100/MaxStartups 10:30:100/g" /etc/ssh/sshd_config
 RUN echo "NETWORKING=yes" > /etc/sysconfig/network
 RUN /etc/init.d/sshd start
-RUN echo sshd:all >> /etc/hosts.allow
+RUN echo all:all >> /etc/hosts.allow
 
 ADD ./sshd_monit.conf /etc/monit/conf.d/
 
