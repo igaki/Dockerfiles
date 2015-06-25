@@ -21,3 +21,5 @@ This dockerfile add sshd setting to the doc-cloud/docker-registry(https://github
 * Usage(in docker-registry dir.)
  * docker build -t hoge/hoge .
  * you should change "newpassword" to adequate one.
+
+monit and tomcat cause container error....
